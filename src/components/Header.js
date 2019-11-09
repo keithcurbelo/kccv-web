@@ -102,7 +102,7 @@ const Header = () => {
                     <span class="font-weight-light">www.keithcurbelo.com</span>
                 </div> */}
           <div class="col-12 col-md-4 mb-3 header-info px-md-2">
-            <h6 class="text-dark-blue">E-Mail</h6>
+            {/* <h6 class="text-dark-blue">E-Mail</h6> */}
             <i class="fas fa-envelope fa-1x text-dark-blue"></i>
             <span class="font-weight-light">contact@keithcurbelo.com</span>
           </div>

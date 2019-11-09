@@ -30,19 +30,19 @@ a:-webkit-any-link {
   //   display: none;
 }
 
-#about {
-  // padding-top: 30px;
-  // height: 800px;
-  // color: #fff;
-  // background-color: #1E88E5;
-}
+// #about {
+// padding-top: 30px;
+// height: 800px;
+// color: #fff;
+// background-color: #1E88E5;
+// }
 
-#skills {
-  // padding-top: 72px;
-  // height: 600px;
-  // color: #fff;
-  // background-color: #673ab7;
-}
+// #skills {
+// padding-top: 72px;
+// height: 600px;
+// color: #fff;
+// background-color: #673ab7;
+// }
 
 #skill-list {
   // visibility: hidden;
@@ -64,7 +64,7 @@ a:-webkit-any-link {
 .header-info,
 .media-icon,
 .media {
-  opacity: 1;
+  //   opacity: 0;
 }
 
 .tool-icon {
@@ -156,16 +156,16 @@ a:-webkit-any-link {
     height: 800px;
   }
 
-  #skills {
-    // padding-top: 70px;
-    // height: 600px;
-    // color: #fff;
-    // background-color: #673ab7;
-  }
+  //   #skills {
+  //     // padding-top: 70px;
+  //     // height: 600px;
+  //     // color: #fff;
+  //     // background-color: #673ab7;
+  //   }
 
-  .media-icon {
-    // display: block;
-  }
+  // .media-icon {
+  //   // display: block;
+  // }
 
   .sm-height {
     height: 75px;
@@ -197,8 +197,4 @@ a:-webkit-any-link {
       padding-right: 0.7rem !important;
     }
   }
-
-  // .bullet-space{
-
-  // }
 }

@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
 import Home from "./components/Home";
 
 const App = () => {
@@ -7,6 +7,7 @@ const App = () => {
     <div className="App">
       <Router>
         <Route path="/" component={Home} />
+        <Redirect from="*" to="" />
       </Router>
     </div>
   );

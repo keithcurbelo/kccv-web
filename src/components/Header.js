@@ -1,7 +1,9 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ProfilePic from "../assets/images/profile_pic.jpg";
 import {Row, Col, Image } from "react-bootstrap"
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFileAlt } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => {
   return (
@@ -60,7 +62,7 @@ const Header = () => {
                 target="_blank"
                 className="media-icon"
               >
-                <i className="fab fa-linkedin fa-2x"></i>
+                <FontAwesomeIcon icon={faLinkedin} size="2x"/>
               </a>
             </span>
             <span className="mr-3 d-inline-block d-md-block">
@@ -69,7 +71,7 @@ const Header = () => {
                 target="_blank"
                 className="media-icon"
               >
-                <i className="fab fa-facebook fa-2x"></i>
+                <FontAwesomeIcon icon={faFacebookF} size="2x"/>
               </a>
             </span>
             <span className="mr-0 mr-md-3 d-inline-block d-md-block">
@@ -78,7 +80,7 @@ const Header = () => {
                 target="_blank"
                 className="media-icon"
               >
-                <i className="far fa-file-alt fa-2x"></i>
+                <FontAwesomeIcon icon={faFileAlt} size="2x"/>
               </a>
             </span>
           </Col>

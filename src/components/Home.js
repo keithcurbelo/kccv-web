@@ -1,11 +1,12 @@
 import React, { Fragment } from "react";
 import Header from "./Header";
+import {Container} from "react-bootstrap"
 
 const HomePage = () => {
   return (
-    <div class="container-fluid bg-light">
+    <Container fluid className="bg-light">
       <Header />
-    </div>
+    </Container>
   );
 };
 

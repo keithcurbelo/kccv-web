@@ -35,8 +35,8 @@ const Header = () => {
         </Row>
       </Col>
       <Col xs={12} md={8} className="bg-white header-deatils">
-        <div className="row sm-height d-sm-none d-md-block"></div>
-        <div className="row">
+        <Row className="sm-height d-sm-none d-md-block"></Row>
+        <Row>
           <div className="col-12 text-center text-md-left">
             <h1 className="text-center text-md-left">
               <span className="media font-weight-light text-muted">Keith</span>
@@ -45,8 +45,8 @@ const Header = () => {
               </span>
             </h1>
           </div>
-        </div>
-        <div className="row mb-3 text-center">
+        </Row>
+        <Row className="mb-3 text-center">
           <div className="col-12 col-md-6 font-weight-light text-md-left text-muted">
             <div className="media manuscript">
               Web & Mobile Application Developer
@@ -84,8 +84,8 @@ const Header = () => {
               </a>
             </span>
           </div>
-        </div>
-        <div className="row md-height d-sm-none d-md-block"></div>
+        </Row>
+        <Row className="md-height d-sm-none d-md-block"></Row>
         <Row id="header-box" className="border-top text-center pt-3 text-muted">
           <div className="col-12 col-md-4 mb-3 header-info">
             {/* <h6 className="text-dark-blue">Location</h6>  */}

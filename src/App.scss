@@ -68,7 +68,12 @@ a:-webkit-any-link {
 .media {
   //   opacity: 0;
 }
-
+#description {
+  height: 425px;
+}
+#profile-name {
+  height: 125px;
+}
 .tool-icon {
   // visibility: hidden;
   display: none;
@@ -151,9 +156,24 @@ a:-webkit-any-link {
 .hex2 {
   transform: rotate(-60deg);
 }
+.sm-height {
+  height: 75px;
+}
+
+.md-height {
+  height: 250px;
+}
+
+.lg-height {
+  height: 410px;
+}
+
+.xl-height {
+  height: 600px;
+}
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   #header-info {
     height: 800px;
   }
@@ -168,28 +188,16 @@ a:-webkit-any-link {
   // .media-icon {
   //   // display: block;
   // }
-
-  .sm-height {
-    height: 75px;
-  }
-
-  .md-height {
-    height: 250px;
-  }
-
-  .lg-height {
-    height: 410px;
-  }
-
-  .xl-height {
-    height: 600px;
-  }
   .t-mark {
     height: 130px;
   }
 
   #skill-list .mb-md-5 {
     margin-bottom: 7rem !important;
+  }
+
+  #description {
+    height: 360px;
   }
 }
 
@@ -198,5 +206,11 @@ a:-webkit-any-link {
     .pr-3 {
       padding-right: 0.7rem !important;
     }
+  }
+  #profile-name {
+    height: 100px;
+  }
+  #description {
+    height: 75px;
   }
 }

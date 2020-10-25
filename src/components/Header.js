@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import ProfilePic from "../assets/images/profile_pic.jpg";
 import {Row, Col, Image } from "react-bootstrap"
 
+
 const Header = () => {
   return (
     <Row
@@ -84,7 +85,7 @@ const Header = () => {
         </Row>
         <Row className="md-height d-sm-none d-md-block"></Row>
         <Row id="header-box" className="border-top text-center pt-3 text-muted">
-          <Col className="col-12 col-md-4 mb-3 header-info">
+          <Col xs={12} md={4} className="mb-3 header-info">
             {/* <h6 className="text-dark-blue">Location</h6>  */}
             <i className="fas fa-map-marker-alt fa-1x text-dark-blue"></i>
             <span className="font-weight-light">Miami, FL</span>

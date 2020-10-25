@@ -1,5 +1,6 @@
 import React, { Fragment } from "react";
 import ProfilePic from "../assets/images/profile_pic.jpg";
+import {Row, Col, Image } from "react-bootstrap"
 
 const Header = () => {
   return (

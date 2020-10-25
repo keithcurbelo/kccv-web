@@ -27,9 +27,15 @@ a:-webkit-any-link {
   // opacity: 0;
   // visibility: hidden;
   position: relative;
-  width: 155px;
+  width: 150px;
   height: 180px;
   //   display: none;
+}
+#profile-name {
+  height: 125px;
+}
+#description {
+  height: 425px;
 }
 
 // #about {
@@ -68,12 +74,7 @@ a:-webkit-any-link {
 .media {
   //   opacity: 0;
 }
-#description {
-  height: 425px;
-}
-#profile-name {
-  height: 125px;
-}
+
 .tool-icon {
   // visibility: hidden;
   display: none;

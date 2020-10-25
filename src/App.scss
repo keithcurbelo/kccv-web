@@ -171,9 +171,13 @@ a:-webkit-any-link {
 .xl-height {
   height: 600px;
 }
-
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  #description {
+    height: 360px;
+  }
+}
 // Medium devices (tablets, 768px and up)
-@media (max-width: 768px) {
+@media all and (max-width: 768px) {
   #header-info {
     height: 800px;
   }
@@ -195,10 +199,18 @@ a:-webkit-any-link {
   #skill-list .mb-md-5 {
     margin-bottom: 7rem !important;
   }
-
+  // #header-info {
+  //   height: 550px;
+  // }
+  // #profile-name {
+  //   height: 100px;
+  // }
   #description {
     height: 360px;
   }
+  // .lg-height {
+  //   height: 400px;
+  // }
 }
 
 @media (max-width: 350px) {
@@ -207,10 +219,16 @@ a:-webkit-any-link {
       padding-right: 0.7rem !important;
     }
   }
+  #header-info {
+    height: 550px;
+  }
   #profile-name {
     height: 100px;
   }
   #description {
     height: 75px;
+  }
+  .lg-height {
+    height: 300px;
   }
 }

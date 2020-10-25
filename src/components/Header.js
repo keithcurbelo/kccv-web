@@ -61,6 +61,7 @@ const Header = () => {
               <a
                 href="https://www.linkedin.com/in/keithcurbelo"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="media-icon"
               >
                 <FontAwesomeIcon icon={faLinkedin} size="2x"/>
@@ -70,6 +71,7 @@ const Header = () => {
               <a
                 href="https://www.facebook.com/keith.curbelo"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="media-icon"
               >
                 <FontAwesomeIcon icon={faFacebookF} size="2x"/>
@@ -79,6 +81,7 @@ const Header = () => {
               <a
                 href="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"
                 target="_blank"
+                rel="noopener noreferrer"
                 className="media-icon"
               >
                 <FontAwesomeIcon icon={faFileAlt} size="2x"/>

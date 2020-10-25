@@ -4,20 +4,19 @@ import {Row, Col, Image } from "react-bootstrap"
 
 const Header = () => {
   return (
-    <div
+    <Row
       id="header-info"
-      class="row px-4 bg-white"
+      class="px-4 bg-white"
       style={{ paddingTop: "70px" }}
     >
       <div class="col-12 col-md-4 text-center" style={{ height: "180px" }}>
-        <div class="row sm-height d-none d-md-block"></div>
-        <img
+        <Row class="sm-height d-none d-md-block"></Row>
+        <Image
           src={ProfilePic}
           id="profile-pic"
-          width="165"
-          height="165"
           alt="profile_pic"
-          class="rounded-circle shadow"
+          class="shadow"
+          roundedCircle
         />
         <div class="row lg-height d-sm-none d-md-block">
           <div class="col-11 d-flex align-items-end h-100 float-right">
@@ -109,7 +108,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-    </div>
+    </Row>
   );
 };
 

@@ -107,7 +107,7 @@ const Header = () => {
             <span className="font-weight-light">contact@keithcurbelo.com</span>
           </Col>
         </Row>
-      </div>
+      </Col>
     </Row>
   );
 };

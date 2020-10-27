@@ -59,19 +59,9 @@ const Header = () => {
             </div>
           </Col>
           <Col id="header-icons" xs={12} md={6} className="mt-3 mt-md-0 text-md-right ">
-          <MediaIcon icon={faLinkedin} iconSize="2x" link="https://www.linkedin.com/in/keithcurbelo"/>
-          <MediaIcon icon={faFacebookF} iconSize="2x" link="https://www.facebook.com/keith.curbelo"/>
-          
-            <span className="mr-0 mr-md-3 d-inline-block d-md-block" style={{height: '50px'}}>
-              <a
-                href="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="media-icon"
-              >
-                <FontAwesomeIcon icon={faFileAlt} size="2x"/>
-              </a>
-            </span>
+            <MediaIcon icon={faLinkedin} iconSize="2x" link="https://www.linkedin.com/in/keithcurbelo"/>
+            <MediaIcon icon={faFacebookF} iconSize="2x" link="https://www.facebook.com/keith.curbelo"/>
+            <MediaIcon icon={faFileAlt} iconSize="2x" link="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"/>
           </Col>
         </Row>
         {/* <Row className="d-sm-none d-md-block" style={{height: '200px'}}></Row> */}

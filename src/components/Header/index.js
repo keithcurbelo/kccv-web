@@ -2,10 +2,8 @@ import React from "react";
 import ProfilePic from "../../assets/images/profile_pic.jpg";
 import {Row, Col, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
-import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import {Name, Position , Links } from "./header-components"
+import {Name, Position , Links , ContactInfo} from "./header-components"
 
 const Header = () => {
   return (
@@ -46,21 +44,7 @@ const Header = () => {
           <Position />
           <Links />
         </Row>
-        {/* <Row className="d-sm-none d-md-block" style={{height: '200px'}}></Row> */}
-        <Row id="header-box" className="border-top text-center pt-3 text-muted">
-          <Col xs={12} md={6} className="mb-3 header-info">
-            <FontAwesomeIcon icon={faMapMarkerAlt} size="1x" className="text-dark-blue mr-3"/>
-            <span className="font-weight-light">Miami, FL</span>
-          </Col>
-          {/* <Col xs={12} md={4} className="mb-3 header-info">
-            <FontAwesomeIcon icon={faMobile} size="1x" className="text-dark-blue mr-3"/>
-            <span className="font-weight-light">786.210.1141</span>
-          </Col> */}
-          <Col xs={12} md={6} className="mb-3 header-info px-md-2">
-            <FontAwesomeIcon icon={faEnvelope} size="1x" className="text-dark-blue mr-3"/>
-            <span className="font-weight-light">contact@keithcurbelo.com</span>
-          </Col>
-        </Row>
+        <ContactInfo/>
       </Col>
     </Row>
   );

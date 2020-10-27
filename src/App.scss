@@ -27,9 +27,15 @@ a:-webkit-any-link {
   // opacity: 0;
   // visibility: hidden;
   position: relative;
-  width: 155px;
+  width: 150px;
   height: 180px;
   //   display: none;
+}
+#profile-name {
+  height: 125px;
+}
+#description {
+  height: 425px;
 }
 
 // #about {
@@ -151,9 +157,28 @@ a:-webkit-any-link {
 .hex2 {
   transform: rotate(-60deg);
 }
+.sm-height {
+  height: 75px;
+}
 
+.md-height {
+  height: 250px;
+}
+
+.lg-height {
+  height: 410px;
+}
+
+.xl-height {
+  height: 600px;
+}
+@media all and (min-width: 769px) and (max-width: 1024px) {
+  #description {
+    height: 360px;
+  }
+}
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
+@media all and (max-width: 768px) {
   #header-info {
     height: 800px;
   }
@@ -168,22 +193,6 @@ a:-webkit-any-link {
   // .media-icon {
   //   // display: block;
   // }
-
-  .sm-height {
-    height: 75px;
-  }
-
-  .md-height {
-    height: 250px;
-  }
-
-  .lg-height {
-    height: 410px;
-  }
-
-  .xl-height {
-    height: 600px;
-  }
   .t-mark {
     height: 130px;
   }
@@ -191,6 +200,18 @@ a:-webkit-any-link {
   #skill-list .mb-md-5 {
     margin-bottom: 7rem !important;
   }
+  // #header-info {
+  //   height: 550px;
+  // }
+  // #profile-name {
+  //   height: 100px;
+  // }
+  #description {
+    height: 360px;
+  }
+  // .lg-height {
+  //   height: 400px;
+  // }
 }
 
 @media (max-width: 350px) {
@@ -198,5 +219,17 @@ a:-webkit-any-link {
     .pr-3 {
       padding-right: 0.7rem !important;
     }
+  }
+  #header-info {
+    height: 550px;
+  }
+  #profile-name {
+    height: 100px;
+  }
+  #description {
+    height: 75px;
+  }
+  .lg-height {
+    height: 300px;
   }
 }

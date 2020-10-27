@@ -2,8 +2,8 @@ import React from "react";
 import {Row, Col } from "react-bootstrap"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFileAlt} from "@fortawesome/free-solid-svg-icons";
-
+import { faFileAlt, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 export const Name = () =>(
     <Row id="profile-name">
         <Col xs={12} className="text-center text-md-left">
@@ -44,4 +44,18 @@ export const Links = ()=> (
         <MediaIcon icon={faFacebookF} iconSize="2x" link="https://www.facebook.com/keith.curbelo"/>
         <MediaIcon icon={faFileAlt} iconSize="2x" link="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"/>
     </Col>
+)
+
+export const ContactField =({value,icon,iconSize,...props})=>(
+    <Col xs={12} md={6} className="mb-3 header-info">
+        <FontAwesomeIcon icon={icon} size={iconSize} className="text-dark-blue mr-3"/>
+        <span className="font-weight-light">{value}</span>
+    </Col>  
+)
+
+export const ContactInfo = ()=>(
+    <Row id="header-box" className="border-top text-center pt-3 text-muted">
+        <ContactField value="Miami, FL" icon={faMapMarkerAlt} iconSize="1x" />
+        <ContactField value="contact@keithcurbelo.com" icon={faEnvelope} iconSize="1x" />
+  </Row>
 )

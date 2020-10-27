@@ -2,11 +2,10 @@ import React from "react";
 import ProfilePic from "../../assets/images/profile_pic.jpg";
 import {Row, Col, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faFileAlt, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
+import { faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import {Name , MediaIcon} from "./header-components"
+import {Name, Position , Links } from "./header-components"
 
 const Header = () => {
   return (
@@ -44,16 +43,8 @@ const Header = () => {
         {/* <Row className="sm-height d-sm-none d-md-block" style={{height: '200px'}}></Row> */}
         <Name />
         <Row id="description" className="mb-3 text-center">
-          <Col xs={12} md={6} className="font-weight-light text-md-left text-muted">
-            <div className="media manuscript">
-              Web & Mobile Application Developer
-            </div>
-          </Col>
-          <Col id="header-icons" xs={12} md={6} className="mt-3 mt-md-0 text-md-right ">
-            <MediaIcon icon={faLinkedin} iconSize="2x" link="https://www.linkedin.com/in/keithcurbelo"/>
-            <MediaIcon icon={faFacebookF} iconSize="2x" link="https://www.facebook.com/keith.curbelo"/>
-            <MediaIcon icon={faFileAlt} iconSize="2x" link="https://drive.google.com/file/d/1jgcC__spBqBppKc6cX3PDpK8fS2CN7ud/view?usp=sharing"/>
-          </Col>
+          <Position />
+          <Links />
         </Row>
         {/* <Row className="d-sm-none d-md-block" style={{height: '200px'}}></Row> */}
         <Row id="header-box" className="border-top text-center pt-3 text-muted">

@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
-export const Name = () =>(
+export const Name =()=>(
     <Row id="profile-name">
         <Col xs={12} className="text-center text-md-left">
             <h1 className="text-center text-md-left">
@@ -17,7 +17,7 @@ export const Name = () =>(
    </Row>
 )
 
-export const Position = () =>(
+export const Position =()=>(
     <Col xs={12} md={6} className="font-weight-light text-md-left text-muted">
         <div className="media manuscript">
             Web & Mobile Application Developer
@@ -25,7 +25,7 @@ export const Position = () =>(
   </Col>
 )
 
-export const MediaIcon = ({ className, icon, link,iconSize, ...props}) => (
+export const MediaIcon =({ className, icon, link,iconSize, ...props})=> (
     <span {...props} className={"mr-3 d-inline-block d-md-block " + className} style={{height: '50px'}}>
         <a
         href={link}
@@ -38,7 +38,7 @@ export const MediaIcon = ({ className, icon, link,iconSize, ...props}) => (
     </span>
 )
 
-export const Links = ()=> (
+export const Links =()=> (
     <Col id="header-icons" xs={12} md={6} className="mt-3 mt-md-0 text-md-right ">
         <MediaIcon icon={faLinkedin} iconSize="2x" link="https://www.linkedin.com/in/keithcurbelo"/>
         <MediaIcon icon={faFacebookF} iconSize="2x" link="https://www.facebook.com/keith.curbelo"/>
@@ -53,9 +53,27 @@ export const ContactField =({value,icon,iconSize,...props})=>(
     </Col>  
 )
 
-export const ContactInfo = ()=>(
+export const ContactInfo =()=>(
     <Row id="header-box" className="border-top text-center pt-3 text-muted">
         <ContactField value="Miami, FL" icon={faMapMarkerAlt} iconSize="1x" />
         <ContactField value="contact@keithcurbelo.com" icon={faEnvelope} iconSize="1x" />
   </Row>
+)
+
+export const MainQuote =()=>(
+    <Row className="lg-height d-sm-none d-md-block">
+        <Col xs={11} className="d-flex align-items-end h-100 float-right">
+        <blockquote className="blockquote text-right d-none d-md-block header-info">
+            <p className="mb-0 text-muted handwriting">
+            If I had asked people what they wanted, they would have said
+            faster horses.
+            </p>
+            <footer className="blockquote-footer font-italic">
+            <small>
+                <cite title="Source Title">Henry Ford</cite>
+            </small>
+            </footer>
+        </blockquote>
+        </Col>
+    </Row>
 )

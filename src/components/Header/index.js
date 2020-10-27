@@ -1,5 +1,5 @@
 import React from "react";
-import ProfilePic from "../assets/images/profile_pic.jpg";
+import ProfilePic from "../../assets/images/profile_pic.jpg";
 import {Row, Col, Image } from "react-bootstrap"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";

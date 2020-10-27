@@ -6,6 +6,8 @@ import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
+import {MediaIcon} from "./header-components"
+
 const Header = () => {
   return (
     <Row
@@ -57,16 +59,7 @@ const Header = () => {
             </div>
           </Col>
           <Col id="header-icons" xs={12} md={6} className="mt-3 mt-md-0 text-md-right ">
-            <span className="mr-3 d-inline-block d-md-block" style={{height: '50px'}}>
-              <a
-                href="https://www.linkedin.com/in/keithcurbelo"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="media-icon"
-              >
-                <FontAwesomeIcon icon={faLinkedin} size="2x"/>
-              </a>
-            </span>
+          <MediaIcon icon={faLinkedin} iconSize="2x" link="https://www.linkedin.com/in/keithcurbelo"/>
             <span className="mr-3 d-inline-block d-md-block" style={{height: '50px'}}>
               <a
                 href="https://www.facebook.com/keith.curbelo"

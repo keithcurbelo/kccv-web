@@ -6,7 +6,7 @@ import { faFacebookF, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faFileAlt, faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import { faEnvelope } from "@fortawesome/free-regular-svg-icons";
 
-import {MediaIcon} from "./header-components"
+import {Name , MediaIcon} from "./header-components"
 
 const Header = () => {
   return (
@@ -42,16 +42,7 @@ const Header = () => {
       </Col>
       <Col xs={12} md={8} className="bg-white header-deatils">
         {/* <Row className="sm-height d-sm-none d-md-block" style={{height: '200px'}}></Row> */}
-        <Row id="profile-name">
-          <Col xs={12} className="text-center text-md-left">
-            <h1 className="text-center text-md-left">
-              <span className="media font-weight-light text-muted">Keith</span>
-              <span className="media text-uppercase text-theme sharpie">
-                Curbelo
-              </span>
-            </h1>
-          </Col>
-        </Row>
+        <Name />
         <Row id="description" className="mb-3 text-center">
           <Col xs={12} md={6} className="font-weight-light text-md-left text-muted">
             <div className="media manuscript">

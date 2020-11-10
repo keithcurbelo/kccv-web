@@ -10,3 +10,39 @@ export const ContactEmail = () => (
     </Col>
   </Row>
 );
+
+export const SocialMediaIcon = ({ url, icon, size }) => (
+  <a href={url} target="_blank" className="mr-3 text-white">
+    <FontAwesomeIcon icon={icon} size={size} />
+  </a>
+);
+
+export const SocialMediaLinks = () => (
+  <Row className="text-center my-2">
+    <Col>
+      <SocialMediaIcon
+        icon={["fab", "linkedin"]}
+        size="2x"
+        url={"https://www.linkedin.com/in/keithcurbelo"}
+      />
+      <SocialMediaIcon
+        icon={["fab", "github"]}
+        size="2x"
+        url={"https://github.com/keithcurbelo"}
+      />
+      <SocialMediaIcon
+        icon={["fab", "facebook-f"]}
+        size="2x"
+        url={"https://www.facebook.com/keith.curbelo"}
+      />
+    </Col>
+  </Row>
+);
+
+export const CopyRight = () => (
+  <Row className="d-flex align-items-end">
+    <Col className="text-center text-muted">
+      <small> Keith Curbelo {new Date().getFullYear()}</small>
+    </Col>
+  </Row>
+);

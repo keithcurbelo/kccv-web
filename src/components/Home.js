@@ -1,11 +1,13 @@
 import React from "react";
 import Header from "./Header";
-import {Container} from "react-bootstrap"
+import Footer from "./Footer";
+import { Container } from "react-bootstrap";
 
 const HomePage = () => {
   return (
     <Container fluid className="bg-light">
       <Header />
+      <Footer />
     </Container>
   );
 };

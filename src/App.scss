@@ -8,8 +8,6 @@ body {
 
 a {
   color: #365577 !important;
-  // display: none;
-  // opacity: 0;
 }
 
 a:hover {
@@ -21,6 +19,11 @@ a:-webkit-any-link {
   color: -webkit-link;
   cursor: pointer;
   text-decoration: none !important;
+}
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 #profile-pic {
@@ -76,7 +79,6 @@ a:-webkit-any-link {
 }
 
 .tool-icon {
-  // visibility: hidden;
   display: none;
   opacity: 0;
   position: relative;
@@ -200,18 +202,16 @@ a:-webkit-any-link {
   #skill-list .mb-md-5 {
     margin-bottom: 7rem !important;
   }
-  // #header-info {
-  //   height: 550px;
-  // }
-  // #profile-name {
-  //   height: 100px;
-  // }
+
   #description {
     height: 360px;
   }
   // .lg-height {
   //   height: 400px;
   // }
+  #footer {
+    display: none;        
+   }
 }
 
 @media (max-width: 350px) {
@@ -232,4 +232,5 @@ a:-webkit-any-link {
   .lg-height {
     height: 300px;
   }
+
 }
